@@ -1,0 +1,12 @@
+gameInfo:
+  baseUrl: "https://tr89.klanlar.org"
+baseRequest:
+  headers:
+    accept: "application/json, text/javascript, */*; q=0.01"
+    cache-control: "no-cache"
+    content-type: "application/x-www-form-urlencoded; charset=UTF-8"
+    pragma: "no-cache"
+    tribalwars-ajax: "1"
+    x-agentname: "test"
+    x-correlationid: "test"
+    x-requested-with: "XMLHttpRequest"

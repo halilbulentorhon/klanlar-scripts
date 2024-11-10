@@ -1,0 +1,8 @@
+- villageId: 17429
+  maxHours: null
+  worldSpeed: 1
+  options:
+    ff: true
+    bb: true
+    ss: true
+    rr: true

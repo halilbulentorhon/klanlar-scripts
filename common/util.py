@@ -22,7 +22,7 @@ def get_base_request_headers(config, village_id, screen):
     return headers
 
 
-def get_csrf_token(config, village_id, screen="main"):
+def get_csrf_token(config, village_id, screen="overview"):
     url = f"{config['gameInfo']['baseUrl']}/game.php?village={village_id}&screen={screen}"
     headers = get_base_request_headers(config, village_id, "main")
 

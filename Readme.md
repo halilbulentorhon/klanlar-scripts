@@ -9,9 +9,9 @@
 - It only uses **spear** and **sword** units.
 - It calculates the optimal number of units to deploy based on maximizing **resource collection per hour**.
 
-### Config
+## Config
 
-#### Sample Base Config:
+### Sample Base Config:
 
 You just need to change your baseUrl.
 
@@ -31,7 +31,7 @@ baseRequest:
 
 ```
 
-#### Scavenge Config:
+### Scavenge Config:
 
 ```yaml
 - villageId: Your village id
@@ -45,13 +45,13 @@ baseRequest:
 
 ```
 
-#### Env variables:
+### Env variables:
 
 | VAR    | Values   | Description                        |
 |--------|----------|------------------------------------|
 | ACTION | scavenge | select the mode of the application |
 
-#### Cookie
+### Cookie
 
 You need to place your cookie into the file '**resources/cookie.txt**'
 

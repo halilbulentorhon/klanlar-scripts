@@ -1,5 +1,3 @@
-import time
-
 import requests
 import json
 
@@ -34,5 +32,3 @@ def post_scavenge(config, village_id, option_id, troops):
         print(f"scavenge request successfully sent to option ({option_id}), with troops {troops}")
     else:
         print("scavenge request failed for reason: ", response_data["response"]["squad_responses"][0]["error"])
-
-    time.sleep(100)

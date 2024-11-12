@@ -57,5 +57,7 @@ def is_scavenge_satisfied(calculation, key):
     sword_count = calculation[key]["Sw"]
 
     if spear_count + sword_count > 10:
+        print(f"scavenge satisfied with key: {key}. scavenge request will be sent")
         return True
+    print(f"scavenge not satisfied with key: {key}")
     return False

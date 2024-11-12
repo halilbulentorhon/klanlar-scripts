@@ -65,4 +65,10 @@ You need to place your cookie into the file '**resources/cookie.txt**'
 
 ### With Docker
 
-TBD
+#### Build Image
+
+> docker build --build-arg ACTION={your_action} -t {your_image_name} .
+
+#### Run Container
+
+> docker run {your_image_name}

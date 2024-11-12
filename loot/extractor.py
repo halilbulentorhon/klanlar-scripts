@@ -5,6 +5,7 @@ from common.util import get_base_request_headers
 
 
 def initialize_loot_credentials(config, village_id, target):
+    
     url = f"{config['gameInfo']['baseUrl']}/game.php?village={village_id}&screen=place&ajax=command&target={target}"
     headers = get_base_request_headers(config, village_id, "place")
 

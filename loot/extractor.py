@@ -30,12 +30,12 @@ def get_loot_ch_value(config, village_id, name, value, target):
         name: value,
         "template_id": "",
         "source_village": str(village_id),
-        "spear": "1",
+        "spear": "0",
         "sword": "0",
         "axe": "",
         "archer": "",
         "spy": "",
-        "light": "",
+        "light": "3",
         "marcher": "",
         "heavy": "",
         "ram": "",
@@ -48,9 +48,15 @@ def get_loot_ch_value(config, village_id, name, value, target):
         "input": f"{target['x']}|{target['y']}",
         "attack": "l"
     }
-
+  
     response = requests.post(url, headers=headers, data=form_data)
     data = response.json()
+    expected_response = {"error": ["Yeterli birim yok"]}
+
+# Parse the JSON response
+    response_json = response.json()
+    if response_json == expected_response:
+        raise Exception("Yeterli birim yok")
     html_content = data["response"]["dialog"]
 
     match = re.search(r'<input[^>]*name="ch"[^>]*value="([^"]*)"', html_content)

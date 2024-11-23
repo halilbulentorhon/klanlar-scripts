@@ -71,4 +71,4 @@ You need to place your cookie into the file '**resources/cookie.txt**'
 
 #### Run Container
 
-> docker run {your_image_name}
+> docker run --name {your_container_name} {your_image_name}

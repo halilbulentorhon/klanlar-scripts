@@ -1,5 +1,5 @@
 - villageId: 17435
-  maxHours: null
+  maxHours: 3
   worldSpeed: 1
   options:
     ff: true
